@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	
+		const sum = function () {
+		let result = 0;
+		return number => result += number;
+	}
+	let resultSum = sum();
+	console.log(resultSum(4));
+	console.log(resultSum(8));
+	console.log(resultSum(10));
+	console.log(resultSum(20));
+					
+	function counter (start ,step ){
+		let count = start;
+		return  reset => reset ? count = start : count += step;
+		}
+	
+	let resultCounter = counter(1,3);
+	console.log(resultCounter());
+	console.log(resultCounter());
+	
+	resultCounter(true);
+	console.log(resultCounter());
+
+</script>
+</body>
+</html>
